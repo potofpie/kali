@@ -1,0 +1,1 @@
+docker run -ti --rm -e DISPLAY=docker.for.mac.localhost:0 -p 4445:4445 -p 16801:16801 -v /Users/bobby/Personal/kali/shared:/home --mount src=kali-root,dst=/root --mount src=kali-postgres,dst=/var/lib/postgresql --cap-add=NET_ADMIN --cap-add=SYS_ADMIN --name parrot --device=/dev/net/tun kali-bobby-img
